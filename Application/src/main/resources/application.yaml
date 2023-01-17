@@ -1,0 +1,15 @@
+server:
+  port : 8081
+url: "http://localhost:8081"
+api:
+  task:
+    find: "/api/task/find"
+folder: "folder"
+spring:
+  kafka:
+    producer:
+      topic: new_tasks
+      id: producerServer
+    group:
+      id: Starship
+    server: localhost:9092
