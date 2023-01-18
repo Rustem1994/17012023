@@ -13,3 +13,7 @@ spring:
     group:
       id: Starship
     server: localhost:9092
+logging:
+  file:
+    name: application.log
+    path: logs
