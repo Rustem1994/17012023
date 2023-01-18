@@ -4356,3 +4356,1059 @@
                 [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:846] [Consumer clientId=consumer-service-1, groupId=service] Setting offset for partition new_tasks-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.103:9092 (id: 0 rack: null)], epoch=0}}
 2023-01-18 22:22:34.159 [INFO] [http-nio-8081-exec-2]
                 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-18 22:31:30.951 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:935] [Consumer clientId=consumer-service-1, groupId=service] Node -1 disconnected.
+2023-01-18 22:32:25.951 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:310] [Consumer clientId=consumer-service-1, groupId=service] Revoke previously assigned partitions new_tasks-0
+2023-01-18 22:32:25.951 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1060] [Consumer clientId=consumer-service-1, groupId=service] Member consumer-service-1-f9184934-466c-4bf9-b1c7-7dc6600a499f sending LeaveGroup request to coordinator 192.168.1.103:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-01-18 22:32:25.952 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:32:25.952 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:32:25.952 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:1075] [Consumer clientId=consumer-service-1, groupId=service] Unsubscribed all topics or patterns and assigned partitions
+2023-01-18 22:32:25.952 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:32:25.952 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:32:25.956 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:659] Metrics scheduler closed
+2023-01-18 22:32:25.956 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-18 22:32:25.956 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:669] Metrics reporters closed
+2023-01-18 22:32:25.958 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.utils.AppInfoParser:83] App info kafka.consumer for consumer-service-1 unregistered
+2023-01-18 22:44:02.583 [INFO] [main]
+                [org.rustem.application.Application:55] Starting Application using Java 17.0.1 on Пользователь with PID 15812 (C:\Users\Win10Pro\Documents\17012023\Application\target\classes started by Win10Pro in C:\Users\Win10Pro\Documents\17012023\Application)
+2023-01-18 22:44:02.585 [INFO] [main]
+                [org.rustem.application.Application:634] No active profile set, falling back to 1 default profile: "default"
+2023-01-18 22:44:03.408 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:44:03.408 [INFO] [main]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-01-18 22:44:03.408 [INFO] [main]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-18 22:44:03.537 [INFO] [main]
+                [org.apache.jasper.servlet.TldScanner:173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-01-18 22:44:03.543 [INFO] [main]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-01-18 22:44:03.967 [INFO] [main]
+                [org.apache.kafka.clients.consumer.ConsumerConfig:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-01-18 22:44:04.059 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:119] Kafka version: 3.1.1
+2023-01-18 22:44:04.060 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:120] Kafka commitId: 97671528ba54a138
+2023-01-18 22:44:04.060 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:121] Kafka startTimeMs: 1674067444058
+2023-01-18 22:44:04.062 [INFO] [main]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:966] [Consumer clientId=consumer-service-1, groupId=service] Subscribed to topic(s): new_tasks
+2023-01-18 22:44:04.067 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:44:04.095 [INFO] [main]
+                [org.rustem.application.Application:61] Started Application in 1.833 seconds (JVM running for 2.108)
+2023-01-18 22:44:04.274 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:402] [Consumer clientId=consumer-service-1, groupId=service] Resetting the last seen epoch of partition new_tasks-0 to 0 since the associated topicId changed from null to aw75vCU5RmSc9qLJny6mmQ
+2023-01-18 22:44:04.277 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:287] [Consumer clientId=consumer-service-1, groupId=service] Cluster ID: P1y24RgORR2ED_t-deHqMA
+2023-01-18 22:44:04.278 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:853] [Consumer clientId=consumer-service-1, groupId=service] Discovered group coordinator 192.168.1.103:9092 (id: 2147483647 rack: null)
+2023-01-18 22:44:04.280 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:44:04.289 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: need to re-join with the given member-id
+2023-01-18 22:44:04.289 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:44:04.291 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:595] [Consumer clientId=consumer-service-1, groupId=service] Successfully joined group with generation Generation{generationId=15, memberId='consumer-service-1-5f0a8695-d493-479c-9e1c-2af15e16bd5d', protocol='range'}
+2023-01-18 22:44:04.293 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:654] [Consumer clientId=consumer-service-1, groupId=service] Finished assignment for group at generation 15: {consumer-service-1-5f0a8695-d493-479c-9e1c-2af15e16bd5d=Assignment(partitions=[new_tasks-0])}
+2023-01-18 22:44:04.297 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:761] [Consumer clientId=consumer-service-1, groupId=service] Successfully synced group in generation Generation{generationId=15, memberId='consumer-service-1-5f0a8695-d493-479c-9e1c-2af15e16bd5d', protocol='range'}
+2023-01-18 22:44:04.297 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:279] [Consumer clientId=consumer-service-1, groupId=service] Notifying assignor about the new Assignment(partitions=[new_tasks-0])
+2023-01-18 22:44:04.299 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:291] [Consumer clientId=consumer-service-1, groupId=service] Adding newly assigned partitions: new_tasks-0
+2023-01-18 22:44:04.308 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:846] [Consumer clientId=consumer-service-1, groupId=service] Setting offset for partition new_tasks-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.103:9092 (id: 0 rack: null)], epoch=0}}
+2023-01-18 22:46:51.036 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:310] [Consumer clientId=consumer-service-1, groupId=service] Revoke previously assigned partitions new_tasks-0
+2023-01-18 22:46:51.037 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1060] [Consumer clientId=consumer-service-1, groupId=service] Member consumer-service-1-5f0a8695-d493-479c-9e1c-2af15e16bd5d sending LeaveGroup request to coordinator 192.168.1.103:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-01-18 22:46:51.037 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:46:51.037 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:46:51.037 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:1075] [Consumer clientId=consumer-service-1, groupId=service] Unsubscribed all topics or patterns and assigned partitions
+2023-01-18 22:46:51.037 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:46:51.038 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:46:51.040 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:659] Metrics scheduler closed
+2023-01-18 22:46:51.041 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-18 22:46:51.041 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:669] Metrics reporters closed
+2023-01-18 22:46:51.043 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.utils.AppInfoParser:83] App info kafka.consumer for consumer-service-1 unregistered
+2023-01-18 22:48:41.491 [INFO] [main]
+                [org.rustem.application.Application:55] Starting Application using Java 17.0.1 on Пользователь with PID 13824 (C:\Users\Win10Pro\Documents\17012023\Application\target\classes started by Win10Pro in C:\Users\Win10Pro\Documents\17012023\Application)
+2023-01-18 22:48:41.494 [INFO] [main]
+                [org.rustem.application.Application:634] No active profile set, falling back to 1 default profile: "default"
+2023-01-18 22:48:42.289 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:48:42.290 [INFO] [main]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-01-18 22:48:42.290 [INFO] [main]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-18 22:48:42.447 [INFO] [main]
+                [org.apache.jasper.servlet.TldScanner:173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-01-18 22:48:42.454 [INFO] [main]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-01-18 22:48:42.856 [INFO] [main]
+                [org.apache.kafka.clients.consumer.ConsumerConfig:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-01-18 22:48:42.944 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:119] Kafka version: 3.1.1
+2023-01-18 22:48:42.945 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:120] Kafka commitId: 97671528ba54a138
+2023-01-18 22:48:42.946 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:121] Kafka startTimeMs: 1674067722944
+2023-01-18 22:48:42.948 [INFO] [main]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:966] [Consumer clientId=consumer-service-1, groupId=service] Subscribed to topic(s): new_tasks
+2023-01-18 22:48:42.953 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:48:42.981 [INFO] [main]
+                [org.rustem.application.Application:61] Started Application in 1.814 seconds (JVM running for 2.086)
+2023-01-18 22:48:43.160 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:402] [Consumer clientId=consumer-service-1, groupId=service] Resetting the last seen epoch of partition new_tasks-0 to 0 since the associated topicId changed from null to aw75vCU5RmSc9qLJny6mmQ
+2023-01-18 22:48:43.163 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:287] [Consumer clientId=consumer-service-1, groupId=service] Cluster ID: P1y24RgORR2ED_t-deHqMA
+2023-01-18 22:48:43.164 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:853] [Consumer clientId=consumer-service-1, groupId=service] Discovered group coordinator 192.168.1.103:9092 (id: 2147483647 rack: null)
+2023-01-18 22:48:43.165 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:48:43.174 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: need to re-join with the given member-id
+2023-01-18 22:48:43.175 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:48:43.177 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:595] [Consumer clientId=consumer-service-1, groupId=service] Successfully joined group with generation Generation{generationId=17, memberId='consumer-service-1-d5e76f91-2c3b-49b3-8963-5e70ecd8d075', protocol='range'}
+2023-01-18 22:48:43.179 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:654] [Consumer clientId=consumer-service-1, groupId=service] Finished assignment for group at generation 17: {consumer-service-1-d5e76f91-2c3b-49b3-8963-5e70ecd8d075=Assignment(partitions=[new_tasks-0])}
+2023-01-18 22:48:43.182 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:761] [Consumer clientId=consumer-service-1, groupId=service] Successfully synced group in generation Generation{generationId=17, memberId='consumer-service-1-d5e76f91-2c3b-49b3-8963-5e70ecd8d075', protocol='range'}
+2023-01-18 22:48:43.183 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:279] [Consumer clientId=consumer-service-1, groupId=service] Notifying assignor about the new Assignment(partitions=[new_tasks-0])
+2023-01-18 22:48:43.184 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:291] [Consumer clientId=consumer-service-1, groupId=service] Adding newly assigned partitions: new_tasks-0
+2023-01-18 22:48:43.192 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:846] [Consumer clientId=consumer-service-1, groupId=service] Setting offset for partition new_tasks-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.103:9092 (id: 0 rack: null)], epoch=0}}
+2023-01-18 22:50:17.625 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:310] [Consumer clientId=consumer-service-1, groupId=service] Revoke previously assigned partitions new_tasks-0
+2023-01-18 22:50:17.625 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1060] [Consumer clientId=consumer-service-1, groupId=service] Member consumer-service-1-d5e76f91-2c3b-49b3-8963-5e70ecd8d075 sending LeaveGroup request to coordinator 192.168.1.103:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-01-18 22:50:17.626 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:50:17.626 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:50:17.626 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:1075] [Consumer clientId=consumer-service-1, groupId=service] Unsubscribed all topics or patterns and assigned partitions
+2023-01-18 22:50:17.626 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:50:17.626 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:50:17.629 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:659] Metrics scheduler closed
+2023-01-18 22:50:17.629 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-18 22:50:17.630 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:669] Metrics reporters closed
+2023-01-18 22:50:17.632 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.utils.AppInfoParser:83] App info kafka.consumer for consumer-service-1 unregistered
+2023-01-18 22:50:19.182 [INFO] [main]
+                [org.rustem.application.Application:55] Starting Application using Java 17.0.1 on Пользователь with PID 12252 (C:\Users\Win10Pro\Documents\17012023\Application\target\classes started by Win10Pro in C:\Users\Win10Pro\Documents\17012023\Application)
+2023-01-18 22:50:19.188 [INFO] [main]
+                [org.rustem.application.Application:634] No active profile set, falling back to 1 default profile: "default"
+2023-01-18 22:50:19.950 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:50:19.950 [INFO] [main]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-01-18 22:50:19.950 [INFO] [main]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-18 22:50:20.108 [INFO] [main]
+                [org.apache.jasper.servlet.TldScanner:173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-01-18 22:50:20.114 [INFO] [main]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-01-18 22:50:20.524 [INFO] [main]
+                [org.apache.kafka.clients.consumer.ConsumerConfig:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-01-18 22:50:20.621 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:119] Kafka version: 3.1.1
+2023-01-18 22:50:20.622 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:120] Kafka commitId: 97671528ba54a138
+2023-01-18 22:50:20.623 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:121] Kafka startTimeMs: 1674067820621
+2023-01-18 22:50:20.625 [INFO] [main]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:966] [Consumer clientId=consumer-service-1, groupId=service] Subscribed to topic(s): new_tasks
+2023-01-18 22:50:20.632 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:50:20.663 [INFO] [main]
+                [org.rustem.application.Application:61] Started Application in 1.81 seconds (JVM running for 2.043)
+2023-01-18 22:50:20.841 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:402] [Consumer clientId=consumer-service-1, groupId=service] Resetting the last seen epoch of partition new_tasks-0 to 0 since the associated topicId changed from null to aw75vCU5RmSc9qLJny6mmQ
+2023-01-18 22:50:20.844 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:287] [Consumer clientId=consumer-service-1, groupId=service] Cluster ID: P1y24RgORR2ED_t-deHqMA
+2023-01-18 22:50:20.845 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:853] [Consumer clientId=consumer-service-1, groupId=service] Discovered group coordinator 192.168.1.103:9092 (id: 2147483647 rack: null)
+2023-01-18 22:50:20.846 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:50:20.854 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: need to re-join with the given member-id
+2023-01-18 22:50:20.855 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:50:20.857 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:595] [Consumer clientId=consumer-service-1, groupId=service] Successfully joined group with generation Generation{generationId=19, memberId='consumer-service-1-5f1f283d-a424-4d6a-b122-7f782b5e8edc', protocol='range'}
+2023-01-18 22:50:20.859 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:654] [Consumer clientId=consumer-service-1, groupId=service] Finished assignment for group at generation 19: {consumer-service-1-5f1f283d-a424-4d6a-b122-7f782b5e8edc=Assignment(partitions=[new_tasks-0])}
+2023-01-18 22:50:20.864 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:761] [Consumer clientId=consumer-service-1, groupId=service] Successfully synced group in generation Generation{generationId=19, memberId='consumer-service-1-5f1f283d-a424-4d6a-b122-7f782b5e8edc', protocol='range'}
+2023-01-18 22:50:20.864 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:279] [Consumer clientId=consumer-service-1, groupId=service] Notifying assignor about the new Assignment(partitions=[new_tasks-0])
+2023-01-18 22:50:20.866 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:291] [Consumer clientId=consumer-service-1, groupId=service] Adding newly assigned partitions: new_tasks-0
+2023-01-18 22:50:20.875 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:846] [Consumer clientId=consumer-service-1, groupId=service] Setting offset for partition new_tasks-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.103:9092 (id: 0 rack: null)], epoch=0}}
+2023-01-18 22:50:46.155 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:310] [Consumer clientId=consumer-service-1, groupId=service] Revoke previously assigned partitions new_tasks-0
+2023-01-18 22:50:46.155 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1060] [Consumer clientId=consumer-service-1, groupId=service] Member consumer-service-1-5f1f283d-a424-4d6a-b122-7f782b5e8edc sending LeaveGroup request to coordinator 192.168.1.103:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-01-18 22:50:46.156 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:50:46.156 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:50:46.156 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:1075] [Consumer clientId=consumer-service-1, groupId=service] Unsubscribed all topics or patterns and assigned partitions
+2023-01-18 22:50:46.156 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:50:46.157 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:50:46.162 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:659] Metrics scheduler closed
+2023-01-18 22:50:46.162 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-18 22:50:46.162 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:669] Metrics reporters closed
+2023-01-18 22:50:46.165 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.utils.AppInfoParser:83] App info kafka.consumer for consumer-service-1 unregistered
+2023-01-18 22:50:47.679 [INFO] [main]
+                [org.rustem.application.Application:55] Starting Application using Java 17.0.1 on Пользователь with PID 11864 (C:\Users\Win10Pro\Documents\17012023\Application\target\classes started by Win10Pro in C:\Users\Win10Pro\Documents\17012023\Application)
+2023-01-18 22:50:47.682 [INFO] [main]
+                [org.rustem.application.Application:634] No active profile set, falling back to 1 default profile: "default"
+2023-01-18 22:50:48.416 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:50:48.416 [INFO] [main]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-01-18 22:50:48.417 [INFO] [main]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-18 22:50:48.576 [INFO] [main]
+                [org.apache.jasper.servlet.TldScanner:173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-01-18 22:50:48.583 [INFO] [main]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-01-18 22:50:48.974 [INFO] [main]
+                [org.apache.kafka.clients.consumer.ConsumerConfig:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-01-18 22:50:49.071 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:119] Kafka version: 3.1.1
+2023-01-18 22:50:49.072 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:120] Kafka commitId: 97671528ba54a138
+2023-01-18 22:50:49.072 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:121] Kafka startTimeMs: 1674067849070
+2023-01-18 22:50:49.074 [INFO] [main]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:966] [Consumer clientId=consumer-service-1, groupId=service] Subscribed to topic(s): new_tasks
+2023-01-18 22:50:49.079 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:50:49.107 [INFO] [main]
+                [org.rustem.application.Application:61] Started Application in 1.753 seconds (JVM running for 1.984)
+2023-01-18 22:50:49.275 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:402] [Consumer clientId=consumer-service-1, groupId=service] Resetting the last seen epoch of partition new_tasks-0 to 0 since the associated topicId changed from null to aw75vCU5RmSc9qLJny6mmQ
+2023-01-18 22:50:49.278 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:287] [Consumer clientId=consumer-service-1, groupId=service] Cluster ID: P1y24RgORR2ED_t-deHqMA
+2023-01-18 22:50:49.279 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:853] [Consumer clientId=consumer-service-1, groupId=service] Discovered group coordinator 192.168.1.103:9092 (id: 2147483647 rack: null)
+2023-01-18 22:50:49.281 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:50:49.289 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: need to re-join with the given member-id
+2023-01-18 22:50:49.289 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:50:49.291 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:595] [Consumer clientId=consumer-service-1, groupId=service] Successfully joined group with generation Generation{generationId=21, memberId='consumer-service-1-cdf3c0da-0b12-48ab-baf2-95d69ee16757', protocol='range'}
+2023-01-18 22:50:49.293 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:654] [Consumer clientId=consumer-service-1, groupId=service] Finished assignment for group at generation 21: {consumer-service-1-cdf3c0da-0b12-48ab-baf2-95d69ee16757=Assignment(partitions=[new_tasks-0])}
+2023-01-18 22:50:49.297 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:761] [Consumer clientId=consumer-service-1, groupId=service] Successfully synced group in generation Generation{generationId=21, memberId='consumer-service-1-cdf3c0da-0b12-48ab-baf2-95d69ee16757', protocol='range'}
+2023-01-18 22:50:49.297 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:279] [Consumer clientId=consumer-service-1, groupId=service] Notifying assignor about the new Assignment(partitions=[new_tasks-0])
+2023-01-18 22:50:49.299 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:291] [Consumer clientId=consumer-service-1, groupId=service] Adding newly assigned partitions: new_tasks-0
+2023-01-18 22:50:49.306 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:846] [Consumer clientId=consumer-service-1, groupId=service] Setting offset for partition new_tasks-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.103:9092 (id: 0 rack: null)], epoch=0}}
+2023-01-18 22:51:44.817 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:310] [Consumer clientId=consumer-service-1, groupId=service] Revoke previously assigned partitions new_tasks-0
+2023-01-18 22:51:44.818 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1060] [Consumer clientId=consumer-service-1, groupId=service] Member consumer-service-1-cdf3c0da-0b12-48ab-baf2-95d69ee16757 sending LeaveGroup request to coordinator 192.168.1.103:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-01-18 22:51:44.819 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:51:44.819 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:51:44.819 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:1075] [Consumer clientId=consumer-service-1, groupId=service] Unsubscribed all topics or patterns and assigned partitions
+2023-01-18 22:51:44.819 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:51:44.819 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:51:44.822 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:659] Metrics scheduler closed
+2023-01-18 22:51:44.822 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-18 22:51:44.823 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:669] Metrics reporters closed
+2023-01-18 22:51:44.825 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.utils.AppInfoParser:83] App info kafka.consumer for consumer-service-1 unregistered
+2023-01-18 22:51:48.358 [INFO] [main]
+                [org.rustem.application.Application:55] Starting Application using Java 17.0.1 on Пользователь with PID 14068 (C:\Users\Win10Pro\Documents\17012023\Application\target\classes started by Win10Pro in C:\Users\Win10Pro\Documents\17012023\Application)
+2023-01-18 22:51:48.361 [INFO] [main]
+                [org.rustem.application.Application:634] No active profile set, falling back to 1 default profile: "default"
+2023-01-18 22:51:49.312 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:51:49.313 [INFO] [main]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-01-18 22:51:49.313 [INFO] [main]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-18 22:51:49.451 [INFO] [main]
+                [org.apache.jasper.servlet.TldScanner:173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-01-18 22:51:49.458 [INFO] [main]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-01-18 22:51:49.618 [INFO] [main]
+                [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-18 22:51:49.672 [INFO] [main]
+                [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-01-18 22:51:49.827 [INFO] [main]
+                [org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-18 22:51:49.918 [INFO] [main]
+                [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2023-01-18 22:51:50.065 [INFO] [main]
+                [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2023-01-18 22:51:50.092 [INFO] [main]
+                [org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-01-18 22:51:50.537 [INFO] [main]
+                [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-18 22:51:50.958 [INFO] [main]
+                [org.apache.kafka.clients.consumer.ConsumerConfig:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-01-18 22:51:51.059 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:119] Kafka version: 3.1.1
+2023-01-18 22:51:51.059 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:120] Kafka commitId: 97671528ba54a138
+2023-01-18 22:51:51.060 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:121] Kafka startTimeMs: 1674067911058
+2023-01-18 22:51:51.062 [INFO] [main]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:966] [Consumer clientId=consumer-service-1, groupId=service] Subscribed to topic(s): new_tasks
+2023-01-18 22:51:51.068 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:51:51.091 [INFO] [main]
+                [org.rustem.application.Application:61] Started Application in 3.052 seconds (JVM running for 3.305)
+2023-01-18 22:51:51.246 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:402] [Consumer clientId=consumer-service-1, groupId=service] Resetting the last seen epoch of partition new_tasks-0 to 0 since the associated topicId changed from null to aw75vCU5RmSc9qLJny6mmQ
+2023-01-18 22:51:51.248 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:287] [Consumer clientId=consumer-service-1, groupId=service] Cluster ID: P1y24RgORR2ED_t-deHqMA
+2023-01-18 22:51:51.249 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:853] [Consumer clientId=consumer-service-1, groupId=service] Discovered group coordinator 192.168.1.103:9092 (id: 2147483647 rack: null)
+2023-01-18 22:51:51.252 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:51:51.260 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: need to re-join with the given member-id
+2023-01-18 22:51:51.260 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:51:51.262 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:595] [Consumer clientId=consumer-service-1, groupId=service] Successfully joined group with generation Generation{generationId=23, memberId='consumer-service-1-0fa5130c-f2a0-4e83-a404-911ff77f19c6', protocol='range'}
+2023-01-18 22:51:51.263 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:654] [Consumer clientId=consumer-service-1, groupId=service] Finished assignment for group at generation 23: {consumer-service-1-0fa5130c-f2a0-4e83-a404-911ff77f19c6=Assignment(partitions=[new_tasks-0])}
+2023-01-18 22:51:51.267 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:761] [Consumer clientId=consumer-service-1, groupId=service] Successfully synced group in generation Generation{generationId=23, memberId='consumer-service-1-0fa5130c-f2a0-4e83-a404-911ff77f19c6', protocol='range'}
+2023-01-18 22:51:51.267 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:279] [Consumer clientId=consumer-service-1, groupId=service] Notifying assignor about the new Assignment(partitions=[new_tasks-0])
+2023-01-18 22:51:51.269 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:291] [Consumer clientId=consumer-service-1, groupId=service] Adding newly assigned partitions: new_tasks-0
+2023-01-18 22:51:51.275 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:846] [Consumer clientId=consumer-service-1, groupId=service] Setting offset for partition new_tasks-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.103:9092 (id: 0 rack: null)], epoch=0}}
+2023-01-18 22:51:54.330 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:310] [Consumer clientId=consumer-service-1, groupId=service] Revoke previously assigned partitions new_tasks-0
+2023-01-18 22:51:54.330 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1060] [Consumer clientId=consumer-service-1, groupId=service] Member consumer-service-1-0fa5130c-f2a0-4e83-a404-911ff77f19c6 sending LeaveGroup request to coordinator 192.168.1.103:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-01-18 22:51:54.330 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:51:54.331 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:51:54.331 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:1075] [Consumer clientId=consumer-service-1, groupId=service] Unsubscribed all topics or patterns and assigned partitions
+2023-01-18 22:51:54.331 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:51:54.332 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:51:54.334 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:659] Metrics scheduler closed
+2023-01-18 22:51:54.335 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-18 22:51:54.335 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:669] Metrics reporters closed
+2023-01-18 22:51:54.337 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.utils.AppInfoParser:83] App info kafka.consumer for consumer-service-1 unregistered
+2023-01-18 22:51:54.371 [INFO] [SpringApplicationShutdownHook]
+                [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2023-01-18 22:51:54.373 [INFO] [SpringApplicationShutdownHook]
+                [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2023-01-18 22:52:08.645 [INFO] [main]
+                [org.rustem.application.Application:55] Starting Application using Java 17.0.1 on Пользователь with PID 10472 (C:\Users\Win10Pro\Documents\17012023\Application\target\classes started by Win10Pro in C:\Users\Win10Pro\Documents\17012023\Application)
+2023-01-18 22:52:08.648 [INFO] [main]
+                [org.rustem.application.Application:634] No active profile set, falling back to 1 default profile: "default"
+2023-01-18 22:52:09.509 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:52:09.509 [INFO] [main]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-01-18 22:52:09.509 [INFO] [main]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-18 22:52:09.682 [INFO] [main]
+                [org.apache.jasper.servlet.TldScanner:173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-01-18 22:52:09.688 [INFO] [main]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-01-18 22:52:09.826 [INFO] [main]
+                [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-18 22:52:09.866 [INFO] [main]
+                [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-01-18 22:52:09.984 [INFO] [main]
+                [org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-18 22:52:10.071 [INFO] [main]
+                [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2023-01-18 22:52:10.187 [INFO] [main]
+                [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2023-01-18 22:52:10.208 [INFO] [main]
+                [org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-01-18 22:52:10.606 [INFO] [main]
+                [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-18 22:52:11.004 [INFO] [main]
+                [org.apache.kafka.clients.consumer.ConsumerConfig:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-01-18 22:52:11.130 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:119] Kafka version: 3.1.1
+2023-01-18 22:52:11.130 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:120] Kafka commitId: 97671528ba54a138
+2023-01-18 22:52:11.130 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:121] Kafka startTimeMs: 1674067931129
+2023-01-18 22:52:11.132 [INFO] [main]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:966] [Consumer clientId=consumer-service-1, groupId=service] Subscribed to topic(s): new_tasks
+2023-01-18 22:52:11.137 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-18 22:52:11.158 [INFO] [main]
+                [org.rustem.application.Application:61] Started Application in 2.839 seconds (JVM running for 3.102)
+2023-01-18 22:52:11.321 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:402] [Consumer clientId=consumer-service-1, groupId=service] Resetting the last seen epoch of partition new_tasks-0 to 0 since the associated topicId changed from null to aw75vCU5RmSc9qLJny6mmQ
+2023-01-18 22:52:11.322 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.Metadata:287] [Consumer clientId=consumer-service-1, groupId=service] Cluster ID: P1y24RgORR2ED_t-deHqMA
+2023-01-18 22:52:11.323 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:853] [Consumer clientId=consumer-service-1, groupId=service] Discovered group coordinator 192.168.1.103:9092 (id: 2147483647 rack: null)
+2023-01-18 22:52:11.325 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:52:11.332 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: need to re-join with the given member-id
+2023-01-18 22:52:11.333 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:535] [Consumer clientId=consumer-service-1, groupId=service] (Re-)joining group
+2023-01-18 22:52:11.334 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:595] [Consumer clientId=consumer-service-1, groupId=service] Successfully joined group with generation Generation{generationId=25, memberId='consumer-service-1-8741a0b8-48f4-4ed4-8534-e69b0e3f17f9', protocol='range'}
+2023-01-18 22:52:11.335 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:654] [Consumer clientId=consumer-service-1, groupId=service] Finished assignment for group at generation 25: {consumer-service-1-8741a0b8-48f4-4ed4-8534-e69b0e3f17f9=Assignment(partitions=[new_tasks-0])}
+2023-01-18 22:52:11.338 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:761] [Consumer clientId=consumer-service-1, groupId=service] Successfully synced group in generation Generation{generationId=25, memberId='consumer-service-1-8741a0b8-48f4-4ed4-8534-e69b0e3f17f9', protocol='range'}
+2023-01-18 22:52:11.339 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:279] [Consumer clientId=consumer-service-1, groupId=service] Notifying assignor about the new Assignment(partitions=[new_tasks-0])
+2023-01-18 22:52:11.340 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:291] [Consumer clientId=consumer-service-1, groupId=service] Adding newly assigned partitions: new_tasks-0
+2023-01-18 22:52:11.346 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:846] [Consumer clientId=consumer-service-1, groupId=service] Setting offset for partition new_tasks-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.103:9092 (id: 0 rack: null)], epoch=0}}
+2023-01-18 22:52:53.462 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:310] [Consumer clientId=consumer-service-1, groupId=service] Revoke previously assigned partitions new_tasks-0
+2023-01-18 22:52:53.463 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1060] [Consumer clientId=consumer-service-1, groupId=service] Member consumer-service-1-8741a0b8-48f4-4ed4-8534-e69b0e3f17f9 sending LeaveGroup request to coordinator 192.168.1.103:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-01-18 22:52:53.463 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:52:53.463 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:52:53.463 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:1075] [Consumer clientId=consumer-service-1, groupId=service] Unsubscribed all topics or patterns and assigned partitions
+2023-01-18 22:52:53.464 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-18 22:52:53.464 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-18 22:52:53.466 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:659] Metrics scheduler closed
+2023-01-18 22:52:53.467 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-18 22:52:53.467 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:669] Metrics reporters closed
+2023-01-18 22:52:53.469 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.utils.AppInfoParser:83] App info kafka.consumer for consumer-service-1 unregistered
+2023-01-18 22:52:53.472 [INFO] [SpringApplicationShutdownHook]
+                [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2023-01-18 22:52:53.474 [INFO] [SpringApplicationShutdownHook]
+                [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
