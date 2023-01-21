@@ -1,0 +1,13 @@
+org\rustem\application\dto\TaskDto$TaskDtoBuilder.class
+org\rustem\application\api\controller\ApiTask.class
+org\rustem\application\configuration\KafkaProducerConfig.class
+org\rustem\application\entity\Task.class
+org\rustem\application\entity\Task$TaskBuilder.class
+org\rustem\application\configuration\KafkaConsumerConfig.class
+org\rustem\application\mapper\TaskMapper.class
+org\rustem\application\Application.class
+org\rustem\application\controller\Main.class
+org\rustem\application\dto\TaskDto.class
+org\rustem\application\Application$1.class
+org\rustem\application\service\TaskService.class
+org\rustem\application\entity\enums\Status.class

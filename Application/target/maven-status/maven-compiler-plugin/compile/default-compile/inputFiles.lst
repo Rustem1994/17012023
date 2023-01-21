@@ -1,0 +1,10 @@
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\api\controller\ApiTask.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\Application.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\entity\enums\Status.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\entity\Task.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\service\TaskService.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\configuration\KafkaConsumerConfig.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\dto\TaskDto.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\configuration\KafkaProducerConfig.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\controller\Main.java
+C:\Users\Win10Pro\Documents\17012023\Application\src\main\java\org\rustem\application\mapper\TaskMapper.java

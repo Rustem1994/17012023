@@ -2,7 +2,7 @@ package org.rustem.application.api.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.rustem.application.dto.TaskDto;
+import org.ruste.models.dto.TaskDto;
 import org.rustem.application.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

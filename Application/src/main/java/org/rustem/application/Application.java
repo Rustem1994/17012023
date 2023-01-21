@@ -20,18 +20,5 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @Bean
-    public JsonDeserializer jsonDeserializer() {
-        return new JsonDeserializer() {
-            @Override
-            public Object deserialize(JsonParser p, DeserializationContext context) throws IOException {
-                return null;
-            }
-        };
-    }
 
-    @Bean
-    public ObjectMapper objectMapper() {
-        return new ObjectMapper();
-    }
 }
