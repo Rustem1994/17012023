@@ -202,3 +202,201 @@
                 [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
 2023-01-21 12:55:02.966 [INFO] [SpringApplicationShutdownHook]
                 [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2023-01-21 23:09:28.556 [INFO] [main]
+                [org.rustem.application.Application:55] Starting Application using Java 17.0.1 on Пользователь with PID 6152 (C:\Users\Win10Pro\Documents\17012023\Application\target\classes started by Win10Pro in C:\Users\Win10Pro\Documents\17012023\Application)
+2023-01-21 23:09:28.559 [INFO] [main]
+                [org.rustem.application.Application:634] No active profile set, falling back to 1 default profile: "default"
+2023-01-21 23:09:29.543 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-21 23:09:29.544 [INFO] [main]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-01-21 23:09:29.544 [INFO] [main]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-21 23:09:29.686 [INFO] [main]
+                [org.apache.jasper.servlet.TldScanner:173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-01-21 23:09:29.695 [INFO] [main]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-01-21 23:09:29.846 [INFO] [main]
+                [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-21 23:09:29.882 [INFO] [main]
+                [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-01-21 23:09:29.989 [INFO] [main]
+                [org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-21 23:09:30.096 [INFO] [main]
+                [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2023-01-21 23:09:30.214 [INFO] [main]
+                [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2023-01-21 23:09:30.239 [INFO] [main]
+                [org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-01-21 23:09:30.399 [INFO] [main]
+                [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-21 23:09:30.877 [INFO] [main]
+                [org.apache.kafka.clients.consumer.ConsumerConfig:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-01-21 23:09:30.995 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:119] Kafka version: 3.1.1
+2023-01-21 23:09:30.995 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:120] Kafka commitId: 97671528ba54a138
+2023-01-21 23:09:30.996 [INFO] [main]
+                [org.apache.kafka.common.utils.AppInfoParser:121] Kafka startTimeMs: 1674328170994
+2023-01-21 23:09:30.998 [INFO] [main]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:966] [Consumer clientId=consumer-service-1, groupId=service] Subscribed to topic(s): new_tasks
+2023-01-21 23:09:31.003 [INFO] [main]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-21 23:09:31.029 [INFO] [main]
+                [org.rustem.application.Application:61] Started Application in 2.838 seconds (JVM running for 3.119)
+2023-01-21 23:09:31.220 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:935] [Consumer clientId=consumer-service-1, groupId=service] Node -1 disconnected.
+2023-01-21 23:09:31.221 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:775] [Consumer clientId=consumer-service-1, groupId=service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-01-21 23:09:31.221 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:1063] [Consumer clientId=consumer-service-1, groupId=service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-01-21 23:09:31.334 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:935] [Consumer clientId=consumer-service-1, groupId=service] Node -1 disconnected.
+2023-01-21 23:09:31.334 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:775] [Consumer clientId=consumer-service-1, groupId=service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-01-21 23:09:31.334 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:1063] [Consumer clientId=consumer-service-1, groupId=service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-01-21 23:09:31.442 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:935] [Consumer clientId=consumer-service-1, groupId=service] Node -1 disconnected.
+2023-01-21 23:09:31.442 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:775] [Consumer clientId=consumer-service-1, groupId=service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-01-21 23:09:31.443 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:1063] [Consumer clientId=consumer-service-1, groupId=service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-01-21 23:09:31.679 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:935] [Consumer clientId=consumer-service-1, groupId=service] Node -1 disconnected.
+2023-01-21 23:09:31.679 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:775] [Consumer clientId=consumer-service-1, groupId=service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-01-21 23:09:31.680 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:1063] [Consumer clientId=consumer-service-1, groupId=service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-01-21 23:09:32.099 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:935] [Consumer clientId=consumer-service-1, groupId=service] Node -1 disconnected.
+2023-01-21 23:09:32.099 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:775] [Consumer clientId=consumer-service-1, groupId=service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-01-21 23:09:32.100 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:1063] [Consumer clientId=consumer-service-1, groupId=service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-01-21 23:09:33.020 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:935] [Consumer clientId=consumer-service-1, groupId=service] Node -1 disconnected.
+2023-01-21 23:09:33.021 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:775] [Consumer clientId=consumer-service-1, groupId=service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-01-21 23:09:33.021 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:1063] [Consumer clientId=consumer-service-1, groupId=service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-01-21 23:09:34.066 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:935] [Consumer clientId=consumer-service-1, groupId=service] Node -1 disconnected.
+2023-01-21 23:09:34.067 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:775] [Consumer clientId=consumer-service-1, groupId=service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-01-21 23:09:34.067 [WARN] [service-0-C-1]
+                [org.apache.kafka.clients.NetworkClient:1063] [Consumer clientId=consumer-service-1, groupId=service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-01-21 23:09:34.248 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-21 23:09:34.249 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-21 23:09:34.249 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.KafkaConsumer:1075] [Consumer clientId=consumer-service-1, groupId=service] Unsubscribed all topics or patterns and assigned partitions
+2023-01-21 23:09:34.249 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:972] [Consumer clientId=consumer-service-1, groupId=service] Resetting generation due to: consumer pro-actively leaving the group
+2023-01-21 23:09:34.249 [INFO] [service-0-C-1]
+                [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1000] [Consumer clientId=consumer-service-1, groupId=service] Request joining group due to: consumer pro-actively leaving the group
+2023-01-21 23:09:34.249 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:659] Metrics scheduler closed
+2023-01-21 23:09:34.249 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-21 23:09:34.250 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.metrics.Metrics:669] Metrics reporters closed
+2023-01-21 23:09:34.251 [INFO] [service-0-C-1]
+                [org.apache.kafka.common.utils.AppInfoParser:83] App info kafka.consumer for consumer-service-1 unregistered
+2023-01-21 23:09:34.254 [INFO] [SpringApplicationShutdownHook]
+                [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2023-01-21 23:09:34.256 [INFO] [SpringApplicationShutdownHook]
+                [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
